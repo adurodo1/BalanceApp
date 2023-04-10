@@ -1,24 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
+import SevenDaysInput from './Components/SevenDaysInput/SevenDaysInput';
+import { DaysProvider } from './Context/Context';
+import DisplayTotal from './Components/DisplayTotal/DisplayTotal';
+import BarChart from './Components/BarChart/BarChart';
 
 function App() {
+/*
+
+input 7 days
+show total
+make div grow according to he
+
+
+*/
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    < >
+    <DaysProvider>
+ <SevenDaysInput/>
+ <DisplayTotal/>
+ <BarChart/>
+ </DaysProvider>
+    </>
   );
 }
 

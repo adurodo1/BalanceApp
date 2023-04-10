@@ -1,0 +1,19 @@
+.bar{
+    width:100px;
+    height: 100px;
+    background-color: blue;
+  float: right;
+    position:absolute;
+    bottom: 10px;
+   
+
+}
+
+.bar-label{
+  
+  float: right;
+    position:absolute;
+    bottom: -15px;
+   
+
+}
